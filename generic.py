@@ -14,7 +14,7 @@ def punctuation():
 def numero():
     return generic.insert(randbelow(7), choice(digits))
 
-
+print('write into console ')
 recargar = input()
 
 for i in range(int(recargar)): 
