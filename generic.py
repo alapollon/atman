@@ -42,6 +42,6 @@ try:
     clip.copy(phrase)
     print('the sequence is copied to the clipboard')
     if recargar >= 0: 
-	recargar =  recargar
+	recargar = recargar
 except:
     print('check read me later' )
