@@ -2,6 +2,7 @@ from string import ascii_lowercase, ascii_uppercase, digits, punctuation
  
 from secrets import randbelow, choice
 
+from random import randint 
 
 generic = []
 
@@ -15,7 +16,14 @@ def numero():
      generic.insert(randbelow(7), choice(digits))
 
 print('write into console ')
-recargar = input()
+
+def permutate(p):
+	if p == 1: 
+	   recargar = randint(7,11) 
+	elif p == 2: 
+	   recargar = randint(12,17)
+	else:
+	   recargar = randint(17,25) 
 
 for i in range(int(recargar)): 
     lowCase()
@@ -33,5 +41,7 @@ try:
 
     clip.copy(phrase)
     print('the sequence is copied to the clipboard')
+    if recargar >= 0: 
+	recargar =  recargar
 except:
     print('check read me later' )
