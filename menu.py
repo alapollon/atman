@@ -1,20 +1,9 @@
  
-import consolemenu 
-
-menu = consolemenu.ConsoleMenu("Phrase Generator","select any permutation")
+import consolemenu_py as Console
 
 from generic import permutate
 
-easy = FunctionItem(permutate(1)) 
-
-random = FunctionItem(permutate(2))
-
-variant = FunctionItem(permutate()) 
-
-selection_menu = SelectionMenu([easy,random,variant]) 
-
-menu.append_item(easy, random, variant) 
-
-def display():
-	menu.show()
-
+console = Console.MainMenu("Phrase Generator")
+console.add_item(Console.FunctionMenuItem("easy",lambda _:permutate(1)))
+console.add_item(Console.FunctionMenuItem("random",lambda _:permutate(2)))
+console.add_item(Console.FunctionMenuItem("vaariant",lambda _:permutate()))
