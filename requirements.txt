@@ -1,11 +1,10 @@
-pyperclip==1.8.2
-Package      Version
------------- -------
-ansiwrap     0.8.4
-console-menu 0.8.0
-ConsoleMenu  1.0.1
-pip          23.3.1
-pyperclip    1.8.2
-setuptools   69.0.2
-six          1.16.0
-textwrap3    0.9.2
+Package        Version
+-------------- -------
+aioconsole     0.7.0
+ansiwrap       0.8.4
+consolemenu.py 0.2.2
+pip            23.3.1
+pyperclip      1.8.2
+setuptools     69.0.2
+six            1.16.0
+textwrap3      0.9.2
