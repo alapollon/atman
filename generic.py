@@ -1,36 +1,42 @@
-from string import ascii_lowercase, ascii_uppercase, digits, punctuation
+
+from aa import __array, permutate, __phrase, recargar
+
+from string import ascii_lowercase, ascii_uppercase, digits
  
 from secrets import randbelow, choice
 
 from random import randint 
 
-generic = []
-ii = 0
-def upperCase():
-     generic.insert(randbelow(5), choice(ascii_uppercase))
+
+def upperCase(self): 
+     array.insert(randbelow(5), choice(ascii_uppercase))
 def lowCase(): 
-     generic.insert(randbelow(3), choice(ascii_lowercase))
-def punctuation(): 
-     generic.insert(6,choice('!@#@$%&^*'))
+     array.insert(randbelow(3), choice(ascii_lowercase))
+def punctuation(self): 
+     array.insert(6,choice('!@#$%&^'))
 def numero():
-     generic.insert(randbelow(7), choice(digits))
-print('write into console ')
-async def permutate(i):
-     if i == 1: 
-         ii = (randint(7,11)) 
-     elif i == 2: 
-          ii = (randint(12,17))
-     else:
-          ii = (randint(17,25))
-for i in range(ii): 
-    lowCase()
-    punctuation()
-    upperCase()
-    numero()
-    pass 
-phrase = ''   
-for elements in generic: 
-    phrase += elements
-    pass 
+     array.insert(randbelow(7), choice(digits))
 
+if permutate == "easy": 
+     recargar = randint(7,11)
+elif permutate == "randomize":
+     recargar = randint(12,17)
+elif permutate == "variable":
+     recargar = randint(17,25)
+for i in range(recargar): 
+     lowCase()
+     punctuation()
+     upperCase()
+     numero()
+     pass 
+for elements in __array:
+     __phrase += elements
+try: 
+     from pyperclip import clip
+     while len(__phrase) == recargar:
+          clip.copy(_phrase)
 
+except: 
+     print("check readme.rd later ")
+     
+     

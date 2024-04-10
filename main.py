@@ -1,16 +1,8 @@
 import os
-import sys
+from menu import console
 
-try: 
-	from menu import console
-	import pyperclip as clip
-	while permutate >= 0:
-		clip.copy(phrase)
-		print('the sequence is copied to the clipboard')
-		pass 
-except:
-    print('check read me later' )
-if __name__=='__main__':
-	sys.exit()
-else:
+def main(): 
 	await console.run()
+
+if __name__=='__main__':
+	main()
