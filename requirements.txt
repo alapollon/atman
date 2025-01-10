@@ -1,5 +1,3 @@
-Package        Version
--------------- -------
 aioconsole     0.7.0
 ansiwrap       0.8.4
 consolemenu.py 0.2.2

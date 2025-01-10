@@ -1,9 +1,11 @@
- 
-import consolemenu_py as Console
+ # todo: research and configure UI 
 
-from generic import permutate
 
-console = Console.MainMenu("Generic Password Generator")
-console.add_item(Console.FunctionMenuItem("easy",lambda _:permutate("easy")))
-console.add_item(Console.FunctionMenuItem("random",lambda _:permutate("randomize")))
-console.add_item(Console.FunctionMenuItem("vaariant",lambda _:permutate("variable")))
+def __init__(self):
+    self.username = 1
+    self.password = 1 
+    self.email = 1
+    self.url = 1
+    pass
+
+
