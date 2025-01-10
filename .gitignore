@@ -4,3 +4,4 @@
 */scripts
 *.cfg
 *.txt
+*.code-workspace
